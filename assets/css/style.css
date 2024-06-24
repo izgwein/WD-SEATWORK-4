@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.orb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+    .btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        img{
+            width: 200px;
+            filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+        }
+    }
+}
+
+button.arrow{
+    left: 912px;
+    top: 430px;
+    width: 3vw;
+    height: 5vh;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+}
+
+
+section.container{
+
+    .slides{
+        list-style: none;
+
+        .slide{
+            img{
+                width: 100px;
+                position: absolute;
+            }
+            .joy{
+                padding-top: 13px;
+                left: 890px;
+                filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+            }
+
+            .sad, .disgust{
+                width: 70px;
+            }
+
+            .sad{
+                left: 840px;
+                filter: drop-shadow(0 0 0.75rem rgb(31, 0, 207));
+            }
+
+            .disgust{
+                right: 840px;
+                filter: drop-shadow(0 0 0.75rem rgb(11, 163, 11));
+            }
+
+        }
+    }
+}
+
+
+
+
+.texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 280px;
+    padding-bottom: 50px;
+}
+
+
+
+
