@@ -6,27 +6,32 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Seatwork 4</title>
 </head>
-<body>
-    <!--<div class="orb" >
-        <button class="btn">
-            <img src="./assets/img/joy.png" alt="orb" class="core-memory">
-        </button>
-    </div>-->
+<body class="flex-center">
 
-    <div class="texts">
+    <div class="title">
         <h1>SEATWORK #4</h1>
     <h3>This seatwork is to blah blah blah words words words. End this.</h3>
     </div>
 
-        <button class="arrow" id="arrow">></button>
-        <section class="container">
-            <ul class="slides">
-            <li class="slide"><img src="./assets/img/sadness.png" alt="" class="sad"></li>
-            <li class="slide"><img src="./assets/img/disgust.png" alt="" class="disgust"></li>
-            <li class="slide"><img src="./assets/img/joy.png" alt="" class="joy"></li>
+    <div class="carousel flex-center">
+        <ul class="wrapper flex-center">
+            <li class="orbs" data-img-no="1"><img src="./assets/img/joy.png" alt=""></li>
+            <li class="orbs" data-img-no="2"><img src="./assets/img/disgust.png" alt=""></li>
+            <li class="orbs" data-img-no="3"><img src="./assets/img/sadness.png" alt=""></li>
         </ul>
-        </section>
+    </div>
 
+    <div class="texts flex-center">
+        <div class="text-item active">
+            <h1>Welcome to the Landing Page!</h1>
+        </div>
+        <div class="text-item">
+            <a href="./pages/page1/index.html"><h1>Feature 1</h1></a>
+        </div>
+        <div class="text-item">
+            <a href="./pages/page2/index.html"><h1>Feature 2</h1></a>
+        </div>
+    </div>
 
     <script src="./assets/js/script.js"></script>
 </body>

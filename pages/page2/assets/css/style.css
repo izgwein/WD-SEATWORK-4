@@ -16,15 +16,17 @@ header{
 }
 
 section.one{
-    padding-left: 20%;
-    
+    padding-left: 10%;
+    border: 2px white solid;
+    height: 88vh;
     .title{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 1000px;
+        width: 90rem;
         padding-bottom: 2rem;
+        border: 2px white solid;
 
         h1{
             font-size: 9rem;
@@ -40,10 +42,126 @@ section.one{
         display: flex;
         flex-direction: row;
         .first{
-            width: 500px;
+            width: 470px;
+            position: absolute;
         }
         p{
             font-size: 2rem;
+            padding-left: 30rem;
+        }
+
+        .second{
+            position: absolute;
+            left: 60%;
+            top: 60%;
+        }
+    }
+}
+
+section.two{
+    border: 2px white solid;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 120rem;
+
+        h1{
+            font-size: 22rem;
+        }
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        padding-left: 4%;
+        .image{
+            img{
+                width: 400px;
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+
+        .text{
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            .paragraph{
+                font-size: 2rem;
+                padding-top: 1rem;
+                padding-left: 3rem;
+                width: 960px;
+                text-align: justify;
+            }
+            .heading{
+                padding-top: 2rem;
+                padding-left: 27rem;
+                font-size: 3rem;
+            }
+            h1{
+                font-size: 3rem;
+                color: white;
+            }
+        }
+
+    }
+}
+
+section.three{
+    display: flex;
+    flex-direction: row;
+    border: 2px white solid;
+
+    .title{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 59rem;
+        padding-left: 4rem;
+        h1{
+            font-size: 20rem;
+        }
+    }
+
+    .contacts{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        h1{
+            font-size: 5rem;
+        }
+    }
+}
+
+section.four{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 2px white solid;
+
+    .services{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .title{
+        display: flex;
+
+        h1{
+            font-size: 10rem;
+            text-align: right;
+            padding-right: 2rem;
         }
     }
 }

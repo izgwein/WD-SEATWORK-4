@@ -1,88 +1,107 @@
-*{
+:root {
+    --slider-height: 10rem;
+    --half-slider-height: calc(var(--slider-height) / 2);
+}
+
+* {
     margin: 0;
     padding: 0;
     color: white;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-
-body{
+body {
     background-color: black;
 }
 
-
-.orb{
+.flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 300px;
-    .btn{
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        img{
-            width: 200px;
-            filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
-        }
-    }
 }
 
-button.arrow{
-    left: 912px;
-    top: 430px;
-    width: 3vw;
-    height: 5vh;
-    background-color: transparent;
-    border: none;
+.carousel {
+    position: relative;
+    width: var(--slider-height);
+    height: var(--slider-height);
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding-top: 20%;
+}
+
+.wrapper {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform-origin: center center;
 }
 
-
-section.container{
-
-    .slides{
-        list-style: none;
-
-        .slide{
-            img{
-                width: 100px;
-                position: absolute;
-            }
-            .joy{
-                padding-top: 13px;
-                left: 890px;
-                filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
-            }
-
-            .sad, .disgust{
-                width: 70px;
-            }
-
-            .sad{
-                left: 840px;
-                filter: drop-shadow(0 0 0.75rem rgb(31, 0, 207));
-            }
-
-            .disgust{
-                right: 840px;
-                filter: drop-shadow(0 0 0.75rem rgb(11, 163, 11));
-            }
-
-        }
-    }
+.orbs {
+    width: 5vw;
+    position: absolute;
+    transform-origin: center center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(calc(var(--rotation, 0deg))) translate(0, -50%);
+    transition: transform 1s ease, z-index 1s ease;
 }
 
+.orbs img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform .4s ease, z-index .4s ease;
+    transform: scale(var(--scale, .9));
+}
 
+.orbs[data-img-no="1"] {
+    --rotation: 0deg;
+}
 
+.orbs[data-img-no="2"] {
+    --rotation: 120deg;
+}
+
+.orbs[data-img-no="3"] {
+    --rotation: 240deg;
+}
+
+.orbs img:hover {
+    --scale: 0.8;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+}
 
 .texts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding-top: 280px;
-    padding-bottom: 50px;
+    position: absolute;
+    height: var(--half-slider-height);
+    text-align: center;
+    top: 55%;
+
+    .text-item{
+        width: 80%;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: .5s ease-in-out 0.3s, height .5s .3s;
+        
+        a{
+            text-decoration: none;
+        }
+    }
+    .text-item.active{
+        opacity: 1;
+        height: 100%;
+    }
 }
-
-
-
-
