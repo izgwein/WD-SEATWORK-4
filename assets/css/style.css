@@ -95,9 +95,16 @@ body {
         align-items: center;
         opacity: 0;
         transition: .5s ease-in-out 0.3s, height .5s .3s;
-        
+
         a{
             text-decoration: none;
+            border: 2px solid white;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+        a:hover{
+            scale: 0.9;
+            box-shadow: 3px 3px 2px white;
         }
     }
     .text-item.active{

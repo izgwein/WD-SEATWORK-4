@@ -15,9 +15,18 @@ header{
     padding: 2rem;
 }
 
+a{
+    text-decoration: none;
+    i{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 section.one{
     padding-left: 10%;
-    border: 2px white solid;
     height: 88vh;
     .title{
         display: flex;
@@ -26,7 +35,7 @@ section.one{
         flex-direction: column;
         width: 90rem;
         padding-bottom: 2rem;
-        border: 2px white solid;
+        transition: transform 1s, opacity 1s;
 
         h1{
             font-size: 9rem;
@@ -40,29 +49,71 @@ section.one{
 
     .content{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         .first{
-            width: 470px;
+            width: 490px;
+            height: 455px;
+            object-fit: cover;
+            left: 9.6%;
             position: absolute;
         }
+        h2{
+            padding-left: 32rem;
+            font-size: 5rem;
+        }
         p{
-            font-size: 2rem;
-            padding-left: 30rem;
+            font-size: 1.5rem;
+            text-align: justify;
+            padding-left: 32rem;
+            padding-top: 0.2rem;
+            padding-right: 48rem;
         }
 
         .second{
             position: absolute;
             left: 60%;
-            top: 60%;
+            top: 64%;
+            width: 500px;
+            height: 260px;
+            object-fit: cover;
         }
+    }
+    .btn{
+        position: absolute;
+        left: 66%;
+        top: 54%;
+        width: 330px;
+        padding: 0.75rem;
+        font-size: 2rem;
+        border-radius: 15px;
+        background-color: transparent;
+        border: 1px white dashed;
+        cursor: pointer;
+    }
+    .btn:hover{
+        scale: 0.9;
+        border: 1px white solid;
+    }
+}
+.title.show-animate{
+    animation: slideDown 2s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
 section.two{
-    border: 2px white solid;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:flex-start;
     flex-direction: column;
 
@@ -74,94 +125,250 @@ section.two{
         width: 120rem;
 
         h1{
-            font-size: 22rem;
+            font-size: 15rem;
         }
     }
 
     .content{
         display: flex;
         flex-direction: row;
-        padding-left: 4%;
-        .image{
-            img{
-                width: 400px;
-                height: 600px;
-                object-fit: cover;
+        .card-holder{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            gap: 3rem;
+
+            .btn{
+
+                width: 330px;
+                padding: 0.75rem;
+                font-size: 2rem;
+                border-radius: 15px;
+                background-color: transparent;
+                border: 1px white dashed;
+                cursor: pointer;
+            }
+            .btn:hover{
+                scale: 0.9;
+                border: 1px white solid;
             }
         }
 
-        .text{
-            padding-top: 1rem;
+        .card{
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            .paragraph{
-                font-size: 2rem;
-                padding-top: 1rem;
-                padding-left: 3rem;
-                width: 960px;
-                text-align: justify;
-            }
-            .heading{
-                padding-top: 2rem;
-                padding-left: 27rem;
-                font-size: 3rem;
+            border: 2px white solid;
+            border-radius: 15px;
+            padding: 1rem;
+            width: 40%;
+            
+            img{
+                width: 80%;
+                padding-bottom: 1rem;
             }
             h1{
-                font-size: 3rem;
-                color: white;
+                font-size: 2rem;
+                padding-bottom: 1rem;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+
+        .card-offset{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 40%;
+            .card{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 2px white solid;
+                border-radius: 15px;
+                padding: 1rem;
+                width: 24%;
+                top: 148%;
+            }
+
+            .btn{
+                position: absolute;
+                top: 135%;
+                width: 370px;
+                padding: 1rem;
+                font-size: 2rem;
+                border-radius: 15px;
+                background-color: transparent;
+                border: 1px white solid;
+                cursor: pointer;
+            }
+            .btn:hover{
+                scale: 0.9;
             }
         }
 
     }
+
 }
 
 section.three{
     display: flex;
     flex-direction: row;
-    border: 2px white solid;
+    height: 100vh;
 
     .title{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         width: 59rem;
-        padding-left: 4rem;
+        padding-left: 1rem;
         h1{
-            font-size: 20rem;
+            font-size: 15rem;
         }
     }
 
-    .contacts{
+    .content{
         display: flex;
-        justify-content: space-around;
-        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        img{
+            height: 100%;
+        }
+        .text{
+            padding-left: 4%;
+            padding-right: 5%;
+            padding-top: 4%;
+            h1{
+                font-size: 5rem;
+                padding-bottom: 4%;
+                text-align: justify;
+            }
+            p{
+                font-size: 2rem;
+                text-align: justify;
+                padding-bottom: 4%;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 12%;
 
-        h1{
-            font-size: 5rem;
+                button{
+                    width: 370px;
+                    padding: 1.2rem;
+                    font-size: 2rem;
+                    border-radius: 15px;
+                    background-color: transparent;
+                    border: 1px white dashed;
+                    cursor: pointer;
+                }
+            }
+            button:hover{
+                scale: 0.9;
+                border: 1px white solid;
+            }
         }
     }
+
+    
 }
 
 section.four{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
     flex-direction: row;
-    border: 2px white solid;
+    height: 100vh;
 
-    .services{
+    .content{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 50%;
+
+        img{
+            width: 120%;
+        }
+    }
+    .examples{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 15.4%;
+        height: 100%;
+        overflow-y: auto;
+        margin-left: 5.5rem;
+        h1{
+            text-align: left;
+        }
+
+        img{
+            width: 95%;
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+        }
     }
 
     .title{
         display: flex;
-
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 50rem;
+        padding-right: 2rem;
         h1{
             font-size: 10rem;
             text-align: right;
-            padding-right: 2rem;
+
+        }
+        p{
+            font-size: 2rem;
+                text-align: justify;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 25%;
+            margin-top: 2%;
+            padding-top: 12%;
+
+            button{
+                width: 370px;
+                padding: 1.2rem;
+                font-size: 2rem;
+                border-radius: 15px;
+                background-color: transparent;
+                border: 1px white dashed;
+                cursor: pointer;
+            }
+        }
+        button:hover{
+            scale: 0.9;
+            border: 1px white solid;
         }
     }
 }
+
+.examples::-webkit-scrollbar {
+    width: 5px;
+  }
+  .examples::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  .examples::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  .examples::-webkit-scrollbar-thumb:hover {
+    background:transparent; 
+  }
