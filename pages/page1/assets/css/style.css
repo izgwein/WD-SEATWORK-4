@@ -14,9 +14,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 23px;
+
     .text{
         display: flex;
         flex-direction: row;
+        z-index: 100;
 
         h1{
             font-size: 5rem;
@@ -55,7 +57,7 @@ section{
         width: 510px;
         height: 460px;
         max-width: 95vw;
-        padding-left: 28%;
+        padding-left: 35%;
 
         .list{
             width: 100%;
@@ -65,7 +67,7 @@ section{
             position: absolute;
             transition: transform 1s;
             list-style: none;
-            counter-reset: list-counter;
+
 
             .cell{
                 position: absolute;
@@ -86,14 +88,25 @@ section{
                 counter-increment: list-counter;
 
                 img{
-                    width: 700px;
+                    width: 600px;
+                    object-fit: cover;
+                    border: 2px white solid;
+                    margin-left: -200px;
                 }
 
                 .caption{
                     position: absolute;
-                    left: -400px;
+                    left: -450px;
                     top: -200px;
                     font-size: 7rem;
+                    text-shadow: 2px 2px 5px black;
+                }
+                .caption2{
+                    position: absolute;
+                    left: -450px;
+
+                    width: 400px;
+                    text-align: justify;
                 }
             }
 
@@ -115,6 +128,11 @@ section{
             .cell:nth-child(3){
                 transform: translateY(-500px);
             }
+            .cell:hover img{
+                scale: 0.9;
+                cursor: pointer;
+            }
+
         }
     }
 
@@ -133,6 +151,7 @@ section{
             height: 10vh;
             background-color: transparent;
             border: none;
+            cursor: pointer;
             i{
                 font-size: 4rem;
             }
