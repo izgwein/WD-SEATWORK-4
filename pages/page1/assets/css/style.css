@@ -158,3 +158,9 @@ section{
         }
     }
 }
+
+.other{
+    h1{
+        cursor: pointer;
+    }
+}
