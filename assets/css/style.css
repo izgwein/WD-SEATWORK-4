@@ -46,6 +46,7 @@ body {
     transform-origin: center center;
     top: 50%;
     left: 50%;
+    cursor: pointer;
     transform: translate(-50%, -50%) rotate(calc(var(--rotation, 0deg))) translate(0, -50%);
     transition: transform 1s ease, z-index 1s ease;
 }
