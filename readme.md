@@ -6,15 +6,12 @@
 <div align="center">
   <a href="https://github.com/izgwein/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/joy.png" alt="orb" width="130" height="100">
+    <img src="./assets/img/joy.png" alt="orb" width="130" height="130">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">SEATWORK 4</h3>
 </div>
 <!-- TODO: Make a short description -->
-<div align="center">
-  Short Description. (Optional)
-</div>
 
 <br />
 
@@ -57,20 +54,15 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+This project showcases 2 different layouts for a feature page using HTML and CSS. It also introduces simple animations and Javascript usage.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website/Single Page Website
 - Vanilla Javascript
-- Page Layout
+- Page Layouting
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -115,8 +107,6 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
-|-|-|-|
 | Circular Image Slider | Used for the landing page's rotating orbs. | https://www.youtube.com/watch?v=VAJEQegv-3g&t=692s |
 | Rotating Carousel | Used for the Feature page 1 | https://codepen.io/agalliat/pen/bGpjVaw |
 | Scrollbar design | Used for designing scrollbar of Feature page 2 | https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar |
