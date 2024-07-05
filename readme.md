@@ -107,6 +107,8 @@ WD-ProjectName
 ## Resources
 
 <!-- TODO: Add References -->
+| Title | Purpose | Link |
+|-|-|-|
 | Circular Image Slider | Used for the landing page's rotating orbs. | https://www.youtube.com/watch?v=VAJEQegv-3g&t=692s |
 | Rotating Carousel | Used for the Feature page 1 | https://codepen.io/agalliat/pen/bGpjVaw |
 | Scrollbar design | Used for designing scrollbar of Feature page 2 | https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar |
