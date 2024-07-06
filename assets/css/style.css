@@ -21,6 +21,12 @@ body {
     align-items: center;
 }
 
+.title{
+    h1{
+        padding-bottom: 20px;
+    }
+}
+
 .carousel {
     position: relative;
     width: var(--slider-height);
